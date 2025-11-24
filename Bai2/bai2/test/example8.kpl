@@ -1,0 +1,30 @@
+// Test file for new features in Bai2
+PROGRAM TestNewFeatures;
+
+VAR 
+  msg : STRING;      // String type
+  data : BYTES;      // Bytes type
+  x, y, result : INTEGER;
+
+BEGIN
+  // Test string literal
+  msg := "Hello World";
+  
+  // Test modulo operator
+  x := 10;
+  y := 3;
+  result := x % y;   // Should be 1
+  
+  // Test power operator
+  result := 2 ** 10;  // Should be 1024
+  
+  // Test REPEAT UNTIL loop
+  x := 1;
+  REPEAT
+    x := x * 2;
+    // This is a line comment, should be ignored
+  UNTIL x >= 100;
+  
+  (* This is old style comment *)
+  
+END.

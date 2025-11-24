@@ -1,0 +1,17 @@
+// Test line comment with //
+PROGRAM TestLineComment;
+VAR 
+  x, y : INTEGER;  // declare two integers
+BEGIN
+  x := 10;  // assign 10 to x
+  // This whole line is a comment
+  y := 20;  // assign 20 to y
+  
+  (* Old style comment still works *)
+  
+  x := x + y;  // add x and y
+  
+  // Multiple line comments
+  // can be used
+  // like this
+END.

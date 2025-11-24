@@ -1,0 +1,12 @@
+// Test power operator
+PROGRAM TestPower;
+VAR 
+  base, exponent, result : INTEGER;
+BEGIN
+  result := 2 ** 3;    // 2^3 = 8
+  result := 5 ** 2;    // 5^2 = 25
+  result := 10 ** 0;   // 10^0 = 1
+  base := 3;
+  exponent := 4;
+  result := base ** exponent;  // 3^4 = 81
+END.

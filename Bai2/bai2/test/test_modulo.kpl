@@ -1,0 +1,10 @@
+// Test modulo operator
+PROGRAM TestModulo;
+VAR 
+  a, b, remainder : INTEGER;
+BEGIN
+  a := 17;
+  b := 5;
+  remainder := a % b;  // result should be 2
+  remainder := 100 % 7;
+END.

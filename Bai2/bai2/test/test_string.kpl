@@ -1,0 +1,9 @@
+// Simple test for string type
+PROGRAM TestString;
+VAR 
+  message : STRING;
+  name : STRING;
+BEGIN
+  message := "Hello KPL Scanner";
+  name := "Student";
+END.

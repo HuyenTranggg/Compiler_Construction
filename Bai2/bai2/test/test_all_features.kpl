@@ -1,0 +1,39 @@
+// Comprehensive test for all new features
+PROGRAM TestAllNew;
+VAR 
+  msg : STRING;
+  data : BYTES;
+  x, y, z : INTEGER;
+  
+BEGIN
+  // Test 1: String type and literals
+  msg := "Testing all features";
+  
+  // Test 2: Bytes type
+  data := BYTES;
+  
+  // Test 3: Modulo operator
+  x := 15 % 4;      // Should be 3
+  y := 100 % 7;     // Should be 2
+  
+  // Test 4: Power operator  
+  z := 2 ** 10;     // Should be 1024
+  z := 3 ** 3;      // Should be 27
+  
+  // Test 5: Line comments
+  x := 42;  // This is ignored
+  // This entire line is ignored
+  
+  // Test 6: REPEAT UNTIL loop
+  x := 0;
+  REPEAT
+    x := x + 1;
+    y := x ** 2;     // Use power inside loop
+    z := y % 10;     // Use modulo inside loop
+    msg := "Loop";   // Use string inside loop
+  UNTIL x >= 5;
+  
+  (* Old comment style *)
+  
+  // All features work together!
+END.

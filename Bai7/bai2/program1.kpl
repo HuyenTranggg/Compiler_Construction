@@ -1,0 +1,66 @@
+PROGRAM Program1; (* Bai 1: Sum, Difference, Product *)
+
+VAR a : Integer;
+    b : Integer;
+    sum : Integer;
+    diff : Integer;
+    prod : Integer;
+
+BEGIN
+  (* Assign values to a and b *)
+  a := 10;
+  b := 5;
+  
+  (* Compute sum *)
+  sum := a + b;
+  
+  (* Compute difference *)
+  diff := a - b;
+  
+  (* Compute product *)
+  prod := a * b;
+  
+  (* Print results *)
+  CALL WRITELN;
+  CALL WRITEC('a');
+  CALL WRITEC(' ');
+  CALL WRITEC('=');
+  CALL WRITEC(' ');
+  CALL WRITEI(a);
+  CALL WRITELN;
+  
+  CALL WRITEC('b');
+  CALL WRITEC(' ');
+  CALL WRITEC('=');
+  CALL WRITEC(' ');
+  CALL WRITEI(b);
+  CALL WRITELN;
+  CALL WRITELN;
+  
+  CALL WRITEC('S');
+  CALL WRITEC('u');
+  CALL WRITEC('m');
+  CALL WRITEC(':');
+  CALL WRITEC(' ');
+  CALL WRITEI(sum);
+  CALL WRITELN;
+  
+  CALL WRITEC('D');
+  CALL WRITEC('i');
+  CALL WRITEC('f');
+  CALL WRITEC('f');
+  CALL WRITEC(':');
+  CALL WRITEC(' ');
+  CALL WRITEI(diff);
+  CALL WRITELN;
+  
+  CALL WRITEC('P');
+  CALL WRITEC('r');
+  CALL WRITEC('o');
+  CALL WRITEC('d');
+  CALL WRITEC(':');
+  CALL WRITEC(' ');
+  CALL WRITEI(prod);
+  CALL WRITELN
+  
+END. (* Program1 *)

@@ -1,0 +1,63 @@
+PROGRAM Program2; (* Bai 2: Sum of Digits *)
+
+VAR n : Integer;
+    digit : Integer;
+    sumDigits : Integer;
+    temp : Integer;
+    quotient : Integer;
+
+BEGIN
+  (* Input the integer *)
+  CALL WRITELN;
+  CALL WRITEC('E');
+  CALL WRITEC('n');
+  CALL WRITEC('t');
+  CALL WRITEC('e');
+  CALL WRITEC('r');
+  CALL WRITEC(' ');
+  CALL WRITEC('n');
+  CALL WRITEC(':');
+  CALL WRITEC(' ');
+  n := READI;
+  
+  (* Initialize sum *)
+  sumDigits := 0;
+  temp := n;
+  
+  (* Compute sum of digits *)
+  WHILE temp != 0 DO
+    BEGIN
+      quotient := temp / 10;
+      digit := temp - quotient * 10;  (* Get last digit *)
+      sumDigits := sumDigits + digit;
+      temp := quotient  (* Remove last digit *)
+    END;
+  
+  (* Print result *)
+  CALL WRITELN;
+  CALL WRITEC('n');
+  CALL WRITEC(' ');
+  CALL WRITEC('=');
+  CALL WRITEC(' ');
+  CALL WRITEI(n);
+  CALL WRITELN;
+  
+  CALL WRITEC('S');
+  CALL WRITEC('u');
+  CALL WRITEC('m');
+  CALL WRITEC(' ');
+  CALL WRITEC('o');
+  CALL WRITEC('f');
+  CALL WRITEC(' ');
+  CALL WRITEC('d');
+  CALL WRITEC('i');
+  CALL WRITEC('g');
+  CALL WRITEC('i');
+  CALL WRITEC('t');
+  CALL WRITEC('s');
+  CALL WRITEC(':');
+  CALL WRITEC(' ');
+  CALL WRITEI(sumDigits);
+  CALL WRITELN
+  
+END. (* Program2 *)
